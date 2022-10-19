@@ -1,9 +1,8 @@
-function getCor() {
+const getColor = () => {
   let colorBox = document.getElementById("color-container");
   let firstColor = Math.floor(Math.random() * (0 + 255));
   let secondColor = Math.floor(Math.random() * (0 + 255));
   let thirdColor = Math.floor(Math.random() * (0 + 255));
-  let btnD = document.getElementById(btnC);
 
   const parseColor =
     "#" +
@@ -14,9 +13,9 @@ function getCor() {
   const numColor =
     "rgb" + "(" + firstColor + ", " + secondColor + ", " + thirdColor + ")";
 
-  let formInput = document.getElementById("formInpit");
-  let inputForm = document.getElementById("formColor");
+  let hexInput = document.getElementById("formInput");
+  let rgbInput = document.getElementById("formColor");
   colorBox.style.backgroundColor = numColor;
-  inputForm.value = numColor;
-  formInput.value = parseColor.toString(16);
-}
+  rgbInput.value = numColor;
+  hexInput.value = parseColor.toString(16);
+};
