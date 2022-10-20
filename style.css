@@ -86,9 +86,10 @@ input {
 }
 .ornament {
   background-color: #3f3e3e;
-  height: 2px;
+  /* height: 2px; */
   width: 50%;
   margin-top: 2rem;
+  padding: 1px;
 }
 .social {
   color: #fff;
