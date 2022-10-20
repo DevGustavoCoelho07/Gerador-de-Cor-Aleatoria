@@ -14,6 +14,7 @@ body {
   height: 20vh;
   font-size: 1.7rem;
   color: transparent;
+  cursor: pointer;
 }
 .copy:hover {
   color: #fff;
