@@ -6,6 +6,9 @@
 body {
   background-color: rgb(51, 51, 51);
 }
+button {
+  cursor: pointer;
+}
 .copy {
   display: flex;
   flex-direction: column;
