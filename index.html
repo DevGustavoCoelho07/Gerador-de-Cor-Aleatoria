@@ -12,10 +12,15 @@
     <div class="container">
       <h1>Gerador de Cor Aleatória</h1>
       <div class="box">
-        <div id="color-container"></div>
-        <br />
+        <div id="color-container" onclick="copyColor()">
+          <span class="copy">Copiar</span>
+        </div>
+
+        <button class="copyBtn" onclick="copyColor()">Copiar</button>
+
         <input id="formInput" type="text" value="" />
         <input id="formColor" type="text" value="" />
+
         <button id="btnC" class="colorBtn" type="submit" onclick="getColor()">
           Clique para Alterar a cor
         </button>

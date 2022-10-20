@@ -19,3 +19,10 @@ const getColor = () => {
   rgbInput.value = numColor;
   hexInput.value = parseColor.toString(16);
 };
+const copyColor = () => {
+  let rgbInput = document.getElementById("formColor");
+  rgbInput.select();
+  rgbInput.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(rgbInput.value);
+  alert("Cor copiada com sucesso!");
+};
